@@ -1,0 +1,23 @@
+# Template file for 'gnome-software'
+pkgname=gnome-software
+version=3.38.0
+revision=1
+#archs="i686 x86_64"
+#wrksrc=
+#create_wrksrc=yes
+build_style=meson
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends=""
+makedepends="gsettings-desktop-schemas-devel json-glib-devel libsoup-devel gnome-online-accounts-devel libxmlb-devel libglib-devel appstream-glib-devel cmake pkg-config flatpak-devel polkit-devel"
+depends=""
+short_desc="GNOME Software (Flatpak) for Void Linux"
+maintainer="Xhivat Hoxhiq <xhivo97@gmail.com>"
+license="GPL-2.0-or-later"
+homepage="https://wiki.gnome.org/Apps/Software"
+distfiles="${GNOME_SITE}/${pkgname}/${version%.*}/${pkgname}-${version}.tar.xz"
+checksum=878acb12a214f7d52796cd6462a3e1954696f2660de7b06b8acfd8b70d225566
+patch_args="-Np1"

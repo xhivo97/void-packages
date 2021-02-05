@@ -1,0 +1,37 @@
+diff -Naurp0 a/meson_options.txt b/meson_options.txt
+--- a/meson_options.txt	2021-02-05 11:36:22.695607572 +0100
++++ b/meson_options.txt	2021-02-05 11:36:12.382608383 +0100
+@@ -1,5 +1,5 @@
+-option('tests', type : 'boolean', value : true, description : 'enable tests')
+-option('gspell', type : 'boolean', value : true, description : 'enable gspell')
+-option('gnome_desktop', type : 'boolean', value : true, description : 'enable gnome-desktop')
+-option('man', type : 'boolean', value : true, description : 'enable man pages')
+-option('packagekit', type : 'boolean', value : true, description : 'enable PackageKit support')
++option('tests', type : 'boolean', value : false, description : 'enable tests')
++option('gspell', type : 'boolean', value : false, description : 'enable gspell')
++option('gnome_desktop', type : 'boolean', value : false, description : 'enable gnome-desktop')
++option('man', type : 'boolean', value : false, description : 'enable man pages')
++option('packagekit', type : 'boolean', value : false, description : 'enable PackageKit support')
+@@ -9 +9 @@ option('eos_updater', type : 'boolean',
+-option('fwupd', type : 'boolean', value : true, description : 'enable fwupd support')
++option('fwupd', type : 'boolean', value : false, description : 'enable fwupd support')
+@@ -11 +11 @@ option('flatpak', type : 'boolean', valu
+-option('malcontent', type : 'boolean', value : true, description : 'enable parental controls support using libmalcontent')
++option('malcontent', type : 'boolean', value : false, description : 'enable parental controls support using libmalcontent')
+@@ -13,2 +13,2 @@ option('rpm_ostree', type : 'boolean', v
+-option('odrs', type : 'boolean', value : true, description : 'enable ODRS support')
+-option('gudev', type : 'boolean', value : true, description : 'enable GUdev support')
++option('odrs', type : 'boolean', value : false, description : 'enable ODRS support')
++option('gudev', type : 'boolean', value : false, description : 'enable GUdev support')
+@@ -17,4 +17,4 @@ option('external_appstream', type : 'boo
+-option('valgrind', type : 'boolean', value : true, description : 'enable Valgrind debugging integration')
+-option('gtk_doc', type : 'boolean', value : true, description : 'enable API reference')
+-option('hardcoded_popular', type : 'boolean', value : true, description : 'enable hardcoded-popular apps plugin')
+-option('default_featured_apps', type : 'boolean', value : true, description : 'enable installation of default featured apps list')
++option('valgrind', type : 'boolean', value : false, description : 'enable Valgrind debugging integration')
++option('gtk_doc', type : 'boolean', value : false, description : 'enable API reference')
++option('hardcoded_popular', type : 'boolean', value : false, description : 'enable hardcoded-popular apps plugin')
++option('default_featured_apps', type : 'boolean', value : false, description : 'enable installation of default featured apps list')
+@@ -22 +22 @@ option('mogwai', type : 'boolean', value
+-option('sysprof', type : 'feature', value : 'auto', description : 'enable sysprof-capture support for profiling')
++option('sysprof', type : 'feature', value : 'disabled', description : 'enable sysprof-capture support for profiling')
